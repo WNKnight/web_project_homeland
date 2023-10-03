@@ -1,8 +1,7 @@
 .intro {
-  width: 828px;
-  height: 516px;
-  margin: 0 148px 304px 0;
-  padding-bottom: 92px;
+  width: 100%;
+  height: auto;
+  margin: 0 304px 92px 148px;
   display: flex;
   flex-direction: column;
 }
@@ -50,10 +49,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 16px;
-  margin: 0 -48px 92px;
+  margin: 0 -48px 0;
   justify-content: center;
 }
-.intro__photo-grid__image {
+.intro__photo-grid-image {
   width: 284px;
   height: 213px;
 }
