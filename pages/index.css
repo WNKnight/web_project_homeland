@@ -17,13 +17,14 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #2a2c2f;
-  font-family: "Inter", "Arial Narrow Bold", sans-serif;
   color: #fff;
+  font-family: "Inter", "Arial Narrow Bold", sans-serif;
   display: flex;
   flex-direction: column;
 }
 .page {
-  width: 1280px;
+  max-width: 1280px;
   height: auto;
   color: #fff;
+  font-family: "Inter", "Arial Narrow Bold", sans-serif;
 }

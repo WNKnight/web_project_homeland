@@ -1,58 +1,60 @@
-.intro {
-  width: 100%;
-  height: auto;
-  margin: 0 304px 92px 148px;
-  display: flex;
-  flex-direction: column;
-}
-.intro__title {
-  width: 828px;
-  height: auto;
-  margin: 0;
-  font-size: 54px;
-  font-weight: 900;
-  line-height: 1.07;
-  padding-bottom: 75px;
-}
-.intro__quote {
-  width: 736px;
-  height: auto;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.42;
-  padding-bottom: 9;
-}
-.intro__quote-author {
-  width: 720px;
-  height: auto;
-  margin: 0;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.42;
-  padding-bottom: 32px;
-  text-align: right;
-}
-.intro__main-text {
-  width: 720px;
-  height: 182px;
-  margin: 0;
-  padding-bottom: 92px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.63;
-}
-.intro__photo-grid {
-  width: 1184px;
-  height: 442px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 16px;
-  margin: 0 -48px 0;
-  justify-content: center;
-}
-.intro__photo-grid-image {
-  width: 284px;
-  height: 213px;
+@media screen and (min-width: 1280px) {
+  .intro {
+    width: 100%;
+    height: auto;
+    margin: 0 304px 92px 148px;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__title {
+    width: 828px;
+    height: auto;
+    margin: 0;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1.07;
+    padding-bottom: 75px;
+  }
+  .intro__quote {
+    width: 736px;
+    height: auto;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.42;
+    padding-bottom: 9;
+  }
+  .intro__quote-author {
+    width: 720px;
+    height: auto;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.42;
+    padding-bottom: 32px;
+    text-align: right;
+  }
+  .intro__main-text {
+    width: 720px;
+    height: 182px;
+    margin: 0;
+    padding-bottom: 92px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.63;
+  }
+  .intro__photo-grid {
+    width: 1184px;
+    height: 442px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 16px;
+    margin: 0 -48px 0;
+    justify-content: center;
+  }
+  .intro__photo-grid-image {
+    width: 284px;
+    height: 213px;
+  }
 }

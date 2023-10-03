@@ -1,69 +1,71 @@
-.places__berea {
-  width: 984px;
-  height: auto;
-  display: flex;
-  margin-bottom: 80px;
-}
-.places__berea-column-1 {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-.places__berea-column-2 {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding-top: 31px;
-}
+@media screen and (min-width: 1280px) {
+  .places__berea {
+    width: 984px;
+    height: auto;
+    display: flex;
+    margin-bottom: 80px;
+  }
+  .places__berea-column-1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  .places__berea-column-2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-top: 31px;
+  }
 
-.berea-title {
-  width: 460px;
-  height: auto;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 1.05;
-  padding-right: 40px;
-  margin: 0;
-}
-.berea-img {
-  width: 460px;
-  height: auto;
-  padding: 48px 40px 48px 0;
-  margin: 0;
-}
-.berea-artist {
-  width: 58px;
-  height: auto;
-  color: #aaaaaa;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 1.21;
-  margin: 0;
-  padding-bottom: 8px;
-}
-.berea-artist-description {
-  width: 456px;
-  height: auto;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.22;
-  margin: 0;
-  padding-bottom: 48px;
-}
-.berea__paragraph-1 {
-  width: 483px;
-  height: auto;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.63;
-  margin: 0;
-  padding-bottom: 25px;
-}
-.berea__paragraph-2 {
-  width: 484px;
-  height: auto;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.63;
-  margin: 0;
+  .berea-title {
+    width: 460px;
+    height: auto;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.05;
+    padding-right: 40px;
+    margin: 0;
+  }
+  .berea-img {
+    width: 460px;
+    height: auto;
+    padding: 48px 40px 48px 0;
+    margin: 0;
+  }
+  .berea-artist {
+    width: 58px;
+    height: auto;
+    color: #aaaaaa;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.21;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  .berea-artist-description {
+    width: 456px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.22;
+    margin: 0;
+    padding-bottom: 48px;
+  }
+  .berea__paragraph-1 {
+    width: 483px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.63;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+  .berea__paragraph-2 {
+    width: 484px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.63;
+    margin: 0;
+  }
 }
