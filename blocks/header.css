@@ -6,7 +6,7 @@
 .header__logo {
   width: 270px;
   height: 70px;
-  margin: 34px 505px 0;
+  margin: 34px 505px 90px;
 }
 .header__title {
   width: 793px;
@@ -16,7 +16,7 @@
   line-height: 1.04;
   text-align: center;
   margin: 0;
-  padding: 90px 0 32px;
+  padding-bottom: 32px;
 }
 .header__subtitle {
   width: 720px;
