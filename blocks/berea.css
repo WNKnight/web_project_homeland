@@ -1,0 +1,65 @@
+.places__berea {
+  width: 984px;
+  height: 680px;
+  display: flex;
+  margin-top: 80px;
+}
+.places__column-1 {
+  flex: 1;
+}
+.places__column-2 {
+  flex: 1;
+}
+
+.berea-title {
+  width: 460px;
+  height: 76px;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.05;
+  padding-right: 40px;
+  margin: 0;
+}
+.berea-img {
+  width: 460px;
+  height: 460px;
+  padding-top: 48px;
+  padding-right: 40px;
+  margin: 0;
+}
+.berea-artist {
+  width: 58px;
+  height: 15px;
+  color: #aaaaaa;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.21;
+  margin: 0;
+  padding-top: 31px;
+}
+.berea-artist-description {
+  width: 456px;
+  height: 22px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.22;
+  margin: 0;
+}
+.berea__paragraph-1 {
+  width: 483px;
+  height: 261px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.63;
+  padding-top: 48px;
+  margin: 0;
+}
+.berea__paragraph-2 {
+  width: 484px;
+  height: 174px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.63;
+  padding-top: 25px;
+  margin: 0;
+}

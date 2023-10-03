@@ -5,11 +5,9 @@
 }
 .places__column-1 {
   flex: 1;
-  padding-right: 40px;
 }
 .places__column-2 {
   flex: 1;
-  padding-top: 107px;
 }
 
 .kiev-title {
@@ -19,43 +17,46 @@
   font-weight: 900;
   line-height: 1.05;
   margin: 0;
+  padding-right: 40px;
 }
 .kiev-img {
   width: 460px;
   height: 460px;
   padding-top: 48px;
+  padding-right: 40px;
 }
 .kiev-artist {
   width: 58px;
   height: 15px;
   color: #aaaaaa;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.21;
   margin: 0;
+  padding-top: 107px;
 }
 .kiev-artist-description {
   width: 456px;
   height: 22px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.22;
   margin: 0;
 }
-.paragraph-1 {
+.kiev__paragraph-1 {
   width: 484px;
   height: 203px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.63;
   padding-top: 48px;
   margin: 0;
 }
-.paragraph-2 {
+.kiev__paragraph-2 {
   width: 484px;
   height: 203px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.63;
   padding-top: 25px;
   margin: 0;
