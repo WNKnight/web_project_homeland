@@ -3,37 +3,170 @@
     width: 984px;
     height: auto;
     display: flex;
+    flex-direction: column;
     margin-bottom: 80px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .places__muramvya-row {
+    width: 984px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding-bottom: 48px;
+  }
+  .muramvya__title {
+    width: 460px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.05;
+    margin: 0 40px 0 0;
+  }
+  .muramvya__artist {
+    width: 456px;
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 107px;
+  }
+  .muramvya__title-artist {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.21;
+    color: #aaa;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  .muramvya__subtitle-artist {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.22;
+    margin: 0;
+  }
+  .places__muramvya-row-column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .places__muramvya-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .muramvya-img {
+    width: 460px;
+    height: auto;
+    margin: 0;
+    padding-right: 40px;
+    order: 1;
+    padding-bottom: 48px;
+  }
+  .places__button {
+    order: 2;
+  }
+  .buy-nft {
+    max-width: 355px;
+    height: auto;
+    background-color: #0278fe;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .buy-nft:hover {
+    background: #0063d2;
+  }
+  .buy-paragraph {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.21;
+    margin: 0;
+    padding: 13px 20px;
+  }
+  .muramvya__paragraphs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .muramvya__paragraph-1 {
+    flex: 1;
+    width: 484px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.63;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+  .muramvya__paragraph-2 {
+    flex: 1;
+    width: 484px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.63;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+  .muramvya__paragraph-3 {
+    flex: 1;
+    width: 484px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.63;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .places__muramvya {
+    max-width: 763px;
+    height: auto;
+    display: flex;
+    margin-bottom: 72px;
   }
   .places__muramvya-column-1 {
     display: flex;
     flex: 1;
     flex-direction: column;
+    flex-basis: calc(50% - 10px);
   }
   .places__muramvya-column-2 {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding-top: 107px;
+    flex-basis: calc(50% - 10px);
+    padding-top: 48px;
   }
-
   .muramvya-title {
-    width: 460px;
+    max-width: 340px;
     height: auto;
-    font-size: 72px;
+    font-size: 42px;
     font-weight: 900;
     line-height: 1.05;
-    padding-right: 40px;
     margin: 0;
+    padding-right: 28px;
+    padding-bottom: 46px;
   }
   .muramvya-img {
-    width: 460px;
+    max-width: 340px;
     height: auto;
-    padding: 48px 40px 48px 0;
+    padding: 0 28px 48px 0;
     margin: 0;
   }
   .muramvya-artist {
-    width: 58px;
+    max-width: 58px;
     height: auto;
     color: #aaaaaa;
     font-size: 12px;
@@ -43,38 +176,123 @@
     padding-bottom: 8px;
   }
   .muramvya-artist-description {
-    width: 456px;
+    max-width: 365px;
     height: auto;
+    white-space: nowrap;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.22;
     margin: 0;
-    padding-bottom: 45px;
+    padding-bottom: 48px;
   }
   .muramvya__paragraph-1 {
-    width: 480px;
+    max-width: 352px;
     height: auto;
-    font-size: 18px;
+    font-size: calc(100% + 0.03vw);
     font-weight: 300;
     line-height: 1.63;
-    padding-bottom: 25px;
     margin: 0;
+    padding-bottom: 12px;
   }
   .muramvya__paragraph-2 {
-    width: 484px;
+    max-width: 352px;
     height: auto;
+    font-size: calc(100% + 0.03vw);
+    font-weight: 300;
+    line-height: 1.63;
+    margin: 0;
+    padding-bottom: 12px;
+  }
+  .muramvya__paragraph-3 {
+    max-width: 352px;
+    height: auto;
+    font-size: calc(100% + 0.03vw);
+    font-weight: 300;
+    line-height: 1.63;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .places__muramvya {
+    max-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 16px 31px;
+  }
+  .places__muramvya-column-1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  .places__muramvya-column-2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+  .muramvya-title {
+    max-width: 288px;
+    height: auto;
+    margin: 0;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1.09;
+    padding-bottom: 30px;
+    align-self: flex-start;
+  }
+  .muramvya-artist {
+    max-width: 288px;
+    height: auto;
+    color: #aaaaaa;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.21;
+    margin: 0;
+    padding-bottom: 8px;
+    align-self: flex-start;
+  }
+  .muramvya-artist-description {
+    max-width: 288px;
+    height: auto;
+    margin: 0;
     font-size: 18px;
+    font-weight: 300;
+    line-height: 1.22;
+    padding-bottom: 30px;
+  }
+  .muramvya-img {
+    max-width: 320px;
+    height: auto;
+    margin: 0 -16px;
+    padding-bottom: 30px;
+  }
+  .muramvya__paragraph-1 {
+    max-width: 288px;
+    height: auto;
+    margin: 0;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     padding-bottom: 25px;
-    margin: 0;
   }
-  .muramvya__paragraph-3 {
-    width: 484px;
+  .muramvya__paragraph-2 {
+    max-width: 288px;
     height: auto;
-    font-size: 18px;
+    margin: 0;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
+    padding-bottom: 25px;
+  }
+  .muramvya__paragraph-3 {
+    max-width: 288px;
+    height: auto;
     margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
   }
 }

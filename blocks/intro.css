@@ -1,31 +1,96 @@
 @media screen and (min-width: 1280px) {
   .intro {
     width: 100%;
+    max-width: 828px;
     height: auto;
-    margin: 0 304px 92px 148px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 304px 92px 148px;
   }
   .intro__title {
-    width: 828px;
+    width: 100%;
+    max-width: 828px;
+    height: auto;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 1.07;
+  }
+  .intro__quote {
+    max-width: 736px;
+    height: auto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.42;
+    margin: 0 0 9px 0;
+    align-self: flex-start;
+  }
+  .intro__quote-author {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.42;
+    margin: 0 0 32px 0;
+    align-self: flex-start;
+    text-align: right;
+  }
+  .intro__main-text {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.63;
+    margin: 0;
+    align-self: flex-start;
+  }
+  .intro__photo-grid-container {
+    max-width: 1184px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin: 0 48px 92px;
+  }
+  .intro__photo-grid-image {
+    width: 284px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .intro {
+    max-width: 720px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px 88px;
+  }
+  .intro__title {
+    max-width: 707px;
     height: auto;
     margin: 0;
     font-size: 54px;
     font-weight: 900;
     line-height: 1.07;
-    padding-bottom: 75px;
+    padding-bottom: 58px;
   }
   .intro__quote {
-    width: 736px;
+    width: 707px;
     height: auto;
     margin: 0;
     font-size: 24px;
     font-weight: 400;
     line-height: 1.42;
-    padding-bottom: 9;
+    padding: 0;
   }
   .intro__quote-author {
-    width: 720px;
+    max-width: 720px;
     height: auto;
     margin: 0;
     font-size: 24px;
@@ -35,26 +100,89 @@
     text-align: right;
   }
   .intro__main-text {
-    width: 720px;
-    height: 182px;
+    max-width: 100%;
+    height: auto;
     margin: 0;
-    padding-bottom: 92px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.63;
+    line-height: 1.42;
+    padding-bottom: 64px;
   }
-  .intro__photo-grid {
-    width: 1184px;
-    height: 442px;
+  .intro__photo-grid-container {
+    width: 720px;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: 16px;
-    margin: 0 -48px 0;
+    margin: 0 auto;
     justify-content: center;
   }
   .intro__photo-grid-image {
-    width: 284px;
-    height: 213px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .intro {
+    max-width: 320px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px 88px;
+  }
+  .intro__title {
+    max-width: 288px;
+    height: auto;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.09;
+    padding-bottom: 54px;
+  }
+  .intro__quote {
+    max-width: 288px;
+    height: auto;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.25;
+    padding-bottom: 55px;
+  }
+  .intro__quote-author {
+    max-width: 288px;
+    height: auto;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.42;
+    padding-bottom: 18px;
+    text-align: right;
+  }
+  .intro__main-text {
+    max-width: 288px;
+    height: auto;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.63;
+    padding-bottom: 38px;
+  }
+  .intro__photo-grid-container {
+    max-width: 288px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 16px;
+    margin: 0;
+    justify-content: center;
+  }
+  .intro__photo-grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

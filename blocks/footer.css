@@ -1,29 +1,45 @@
 @media screen and (min-width: 1280px) {
-  .footer__cover-content {
-    width: 1184px;
-    height: 740px;
-    position: relative;
-    margin: 0 0 92px;
-  }
-  .footer__cover-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-    overflow: hidden;
-    position: absolute;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
   }
 
-  .footer__cover-box {
-    width: 656px;
+  .footer__cover-content {
+    width: 1184px;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 243px 264px;
-    position: absolute;
+    margin: 0 48px 92px;
+    position: relative;
+    display: inline-block;
   }
+
+  .footer__cover-background {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  .footer__cover-content:hover .footer__cover-background {
+    opacity: 0.3;
+    background-color: #2a2c2f;
+  }
+  .footer__cover-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+
   .footer__cover-main-text {
     width: auto;
     height: auto;
@@ -35,6 +51,7 @@
     color: #fff;
     z-index: 3;
   }
+
   .footer__cover-sub-text {
     width: auto;
     height: auto;
@@ -42,16 +59,15 @@
     font-weight: 400;
     line-height: 1.22;
     text-align: center;
-    margin: 0 0 32px;
-    color: #fff;
-    z-index: 3;
+    margin-bottom: 32px;
   }
+
   .footer__buy-button {
     width: auto;
     height: auto;
     border: none;
-    z-index: 3;
   }
+
   .buy-ticket {
     width: auto;
     height: auto;
@@ -61,11 +77,12 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    z-index: 3;
   }
+
   .buy-ticket:hover {
     background-color: #0063d2;
   }
+
   .footer__copyright {
     width: 170px;
     height: auto;
@@ -74,16 +91,197 @@
     line-height: 1.14;
     margin: 0 558px 24px;
   }
-  .cover__overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #2a2c2f;
-    opacity: 0%;
-    transition: 0.4s ease;
-    z-index: 2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
   }
-  .cover__overlay:hover {
-    opacity: 80%;
+
+  .footer__cover-content {
+    width: 768px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 48px 92px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer__cover-background {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  .footer__cover-content:hover .footer__cover-background {
+    opacity: 0.3;
+    background-color: #2a2c2f;
+  }
+  .footer__cover-box {
+    width: 656px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+
+  .footer__cover-main-text {
+    width: auto;
+    height: auto;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1.05;
+    text-align: center;
+    margin: 0 0 32px;
+    color: #fff;
+    z-index: 3;
+  }
+
+  .footer__cover-sub-text {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.22;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .footer__buy-button {
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  .buy-ticket {
+    width: auto;
+    height: auto;
+    padding: 13px 20px;
+    border-radius: 4px;
+    background-color: #0278fe;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buy-ticket:hover {
+    background-color: #0063d2;
+  }
+
+  .footer__copyright {
+    width: 170px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.14;
+    margin: 0 558px 24px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+  }
+
+  .footer__cover-content {
+    max-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px 64px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .footer__cover-background {
+    max-width: 320px;
+    height: auto;
+    display: block;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  .footer__cover-content:hover .footer__cover-background {
+    opacity: 0.3;
+    background-color: #2a2c2f;
+  }
+
+  .footer__cover-box {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+
+  .footer__cover-main-text {
+    max-width: 100%;
+    height: auto;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.09;
+    text-align: center;
+    margin: 0 0 16px;
+    color: #fff;
+    z-index: 3;
+  }
+
+  .footer__cover-sub-text {
+    max-width: 100%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.22;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .footer__buy-button {
+    max-width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .buy-ticket {
+    max-width: 100%;
+    height: auto;
+    padding: 13px 20px;
+    border-radius: 4px;
+    background-color: #0278fe;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .buy-ticket:hover {
+    background-color: #0063d2;
+  }
+
+  .footer__copyright {
+    max-width: 100%;
+    height: auto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.14;
+    margin: 0 80 24px;
   }
 }

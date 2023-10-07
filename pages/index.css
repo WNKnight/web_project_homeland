@@ -10,21 +10,36 @@
 @import url(../blocks/belem.css);
 @import url(../blocks/footer.css);
 
-body {
-  margin: 0;
+.page {
+  margin: 0 auto;
   padding: 0;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background-color: #2a2c2f;
   color: #fff;
   font-family: "Inter", "Arial Narrow Bold", sans-serif;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.page {
+
+.content {
+  width: 100%;
   max-width: 1280px;
-  height: auto;
-  color: #fff;
-  font-family: "Inter", "Arial Narrow Bold", sans-serif;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .content {
+    max-width: 768px; /* Largura máxima para telas entre 768px e 1280px */
+    padding: 0; /* Remova o preenchimento horizontal */
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .content {
+    max-width: 320px; /* Largura máxima para telas menores ou iguais a 768px */
+    padding: 0;
+  }
 }

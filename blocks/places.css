@@ -1,28 +1,73 @@
-.places {
-  width: 987px;
-  height: auto;
-  margin-left: 145px;
-  margin-left: 148px;
+@media screen and (min-width: 1280px) {
+  .places {
+    max-width: 1280px;
+    height: auto;
+    margin: 0 145px 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .buy-nft {
+    width: auto;
+    height: auto;
+    background-color: #0278fe;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .buy-nft:hover {
+    background: #0063d2;
+  }
+  .buy-paragraph {
+    width: 315px;
+    height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.21;
+    margin: 0;
+    padding: 13px 20px;
+  }
 }
-.buy-nft {
-  width: auto;
-  height: auto;
-  background-color: #0278fe;
-  color: #fff;
-  border-radius: 4px;
-  padding: 0;
-  border: none;
-  cursor: pointer;
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .places {
+    max-width: 100%;
+    margin: 0 11px 92px;
+    justify-content: flex-start;
+  }
 }
-.buy-nft:hover {
-  background: #0063d2;
-}
-.buy-paragraph {
-  width: 315px;
-  height: 22px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.21;
-  margin: 0;
-  padding: 13px 20px;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .places {
+    max-width: 320px;
+    margin: 0 16px;
+    justify-content: flex-start;
+  }
+  .places__button {
+    max-width: 288px;
+  }
+  .buy-nft {
+    max-width: 288px;
+    height: auto;
+    background-color: #0278fe;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    order: 7;
+  }
+  .buy-nft:hover {
+    background: #0063d2;
+  }
+  .buy-paragraph {
+    width: 245px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+    margin: 0;
+    padding: 16px 20px;
+  }
 }
