@@ -131,82 +131,135 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .places__muramvya {
-    max-width: 763px;
+    max-width: 720px;
     height: auto;
     display: flex;
+    flex-direction: column;
     margin-bottom: 72px;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
-  .places__muramvya-column-1 {
+  .places__muramvya-row {
+    width: 720px;
+    height: 46px;
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-basis: calc(50% - 10px);
+    flex-direction: row;
+    align-self: flex-start;
+    padding-bottom: 48px;
   }
-  .places__muramvya-column-2 {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-basis: calc(50% - 10px);
-    padding-top: 48px;
-  }
-  .muramvya-title {
-    max-width: 340px;
-    height: auto;
+  .muramvya__title {
+    width: 340px;
+    height: 46px;
     font-size: 42px;
     font-weight: 900;
     line-height: 1.05;
-    margin: 0;
-    padding-right: 28px;
-    padding-bottom: 46px;
+    margin: 0 28px 0 0;
   }
-  .muramvya-img {
-    max-width: 340px;
+  .muramvya__artist {
+    width: 352px;
     height: auto;
-    padding: 0 28px 48px 0;
+    flex-direction: column;
     margin: 0;
   }
-  .muramvya-artist {
-    max-width: 58px;
-    height: auto;
-    color: #aaaaaa;
+  .muramvya__title-artist {
+    width: 100%;
     font-size: 12px;
     font-weight: 300;
     line-height: 1.21;
+    color: #aaa;
     margin: 0;
     padding-bottom: 8px;
   }
-  .muramvya-artist-description {
-    max-width: 365px;
-    height: auto;
-    white-space: nowrap;
+  .muramvya__subtitle-artist {
+    width: 100%;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.22;
     margin: 0;
+  }
+  .places__muramvya-row-column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .places__muramvya-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    margin: 0;
+  }
+  .muramvya-img {
+    width: 340px;
+    height: auto;
+    margin: 0;
+    padding-right: 28px;
+    order: 1;
     padding-bottom: 48px;
+    order: 1;
+  }
+  .places__button {
+    order: 2;
+    padding-right: 13px;
+  }
+  .buy-nft {
+    max-width: 355px;
+    height: auto;
+    background-color: #0278fe;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .buy-nft:hover {
+    background: #0063d2;
+  }
+  .buy-paragraph {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.21;
+    margin: 0;
+    padding: 13px 20px;
+  }
+  .muramvya__paragraphs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    order: 2;
   }
   .muramvya__paragraph-1 {
-    max-width: 352px;
+    flex: 1;
+    width: 352px;
     height: auto;
-    font-size: calc(100% + 0.03vw);
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     margin: 0;
-    padding-bottom: 12px;
+    padding-bottom: 25px;
   }
   .muramvya__paragraph-2 {
-    max-width: 352px;
+    flex: 1;
+    width: 352px;
     height: auto;
-    font-size: calc(100% + 0.03vw);
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     margin: 0;
-    padding-bottom: 12px;
+    padding-bottom: 25px;
   }
   .muramvya__paragraph-3 {
-    max-width: 352px;
+    flex: 1;
+    width: 352px;
     height: auto;
-    font-size: calc(100% + 0.03vw);
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     margin: 0;

@@ -124,72 +124,125 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   .places__criccieth {
-    max-width: 763px;
+    max-width: 720px;
     height: auto;
     display: flex;
+    flex-direction: column;
     margin-bottom: 46px;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
-  .places__criccieth-column-1 {
+  .places__criccieth-row {
+    max-width: 100%;
+    max-height: 152px;
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-basis: calc(50% - 10px);
-  }
-  .places__criccieth-column-2 {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-basis: calc(50% - 10px);
-  }
-  .criccieth-title {
-    max-width: 340px;
-    height: auto;
-    font-size: 42px;
-    font-weight: 900;
-    line-height: 1.05;
-    margin: 0;
-    padding-right: 28px;
+    flex-direction: row;
+    align-self: flex-start;
     padding-bottom: 46px;
   }
-  .criccieth-img {
+  .criccieth__title {
     max-width: 340px;
-    height: auto;
-    padding: 0 28px 48px 0;
+    max-height: 92px;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.09;
+    margin: 0 16px 0 0;
+  }
+  .criccieth__artist {
+    max-width: 352px;
+    max-height: 67;
+    flex-direction: column;
     margin: 0;
   }
-  .criccieth-artist {
-    max-width: 58px;
-    height: auto;
-    color: #aaaaaa;
+  .criccieth__title-artist {
+    width: 100%;
     font-size: 12px;
     font-weight: 300;
     line-height: 1.21;
+    color: #aaa;
     margin: 0;
     padding-bottom: 8px;
   }
-  .criccieth-artist-description {
-    max-width: 365px;
+  .criccieth__subtitle-artist {
+    width: 100%;
     height: auto;
-    white-space: nowrap;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.22;
     margin: 0;
-    padding-bottom: 44px;
+  }
+  .places__criccieth-row-column {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .places__criccieth-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    margin: 0;
+  }
+  .criccieth-img {
+    width: 340px;
+    height: auto;
+    margin: 0;
+    padding-right: 28px;
+    order: 1;
+    padding-bottom: 48px;
+    order: 1;
+  }
+  .places__button {
+    padding-right: 13px;
+    order: 2;
+  }
+  .buy-nft {
+    max-width: 355px;
+    height: auto;
+    background-color: #0278fe;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .buy-nft:hover {
+    background: #0063d2;
+  }
+  .buy-paragraph {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.21;
+    margin: 0;
+    padding: 13px 20px;
+  }
+  .criccieth__paragraphs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
   .criccieth__paragraph-1 {
+    flex: 1;
     max-width: 352px;
-    height: auto;
-    font-size: calc(100% + 0.02vw);
+    max-height: auto;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     margin: 0;
     padding-bottom: 25px;
   }
   .criccieth__paragraph-2 {
+    flex: 1;
     max-width: 352px;
-    height: auto;
-    font-size: calc(100% + 0.02vw);
+    max-height: auto;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.63;
     margin: 0;
