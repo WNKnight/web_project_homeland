@@ -40,21 +40,6 @@ body {
   padding: 0;
   margin-bottom: 92px;
 }
-.page {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0;
-  color: #fff;
-  font-family: "Inter", "Arial Narrow Bold", sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.content {
-  max-width: 100%;
-  padding: 0;
-  margin-bottom: 92px;
-}
 
 @media screen and (max-width: 320px) {
   .button {
