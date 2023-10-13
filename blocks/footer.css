@@ -1,57 +1,102 @@
-@media screen and (min-width: 1280px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-  }
-
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__cover-content {
+  width: 92.5%;
+  height: auto;
+  margin: 0 48px 92px;
+  position: relative;
+  display: inline-block;
+}
+.footer__cover-background {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+.footer__cover-content:hover .footer__cover-background {
+  opacity: 0.3;
+  background-color: #2a2c2f;
+}
+.footer__cover-box {
+  width: 55.4%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.footer__cover-main-text {
+  width: 100%;
+  height: auto;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
+  margin: 0 0 5%;
+  color: #fff;
+}
+.footer__cover-sub-text {
+  width: auto;
+  height: auto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  text-align: center;
+  margin: 0 0 5%;
+}
+.footer__copyright {
+  width: 13.3%;
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
+  margin: 0 auto 1.9%;
+}
+@media screen and (max-width: 768px) {
   .footer__cover-content {
-    width: 1184px;
+    width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 0 48px 92px;
+    margin: 0 auto 11.5%;
     position: relative;
     display: inline-block;
+    /*tentar overflow-hidden*/
   }
-
   .footer__cover-background {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-    z-index: -1;
     opacity: 1;
     transition: opacity 0.25s ease-in-out;
   }
-
   .footer__cover-content:hover .footer__cover-background {
     opacity: 0.3;
     background-color: #2a2c2f;
   }
   .footer__cover-box {
+    width: 55.4%;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     text-align: center;
     color: #fff;
   }
-
   .footer__cover-main-text {
-    width: auto;
+    width: 100%;
     height: auto;
     font-size: 72px;
     font-weight: 900;
     line-height: 1.05;
     text-align: center;
-    margin: 0 0 32px;
+    margin: 0 0 5%;
     color: #fff;
-    z-index: 3;
   }
-
   .footer__cover-sub-text {
     width: auto;
     height: auto;
@@ -59,229 +104,70 @@
     font-weight: 400;
     line-height: 1.22;
     text-align: center;
-    margin-bottom: 32px;
+    margin: 0 0 5%;
   }
-
-  .footer__buy-button {
-    width: auto;
-    height: auto;
-    border: none;
-  }
-
-  .buy-ticket {
-    width: auto;
-    height: auto;
-    padding: 13px 20px;
-    border-radius: 4px;
-    background-color: #0278fe;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  .buy-ticket:hover {
-    background-color: #0063d2;
-  }
-
   .footer__copyright {
-    width: 170px;
+    width: 22%;
     height: auto;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.14;
-    margin: 0 558px 24px;
+    margin: 0 auto 3.2%;
   }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 768px;
-  }
-
+@media screen and (max-width: 320px) {
   .footer__cover-content {
-    width: 768px;
+    width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 0 48px 92px;
+    margin: 0 auto 20%;
     position: relative;
     display: inline-block;
   }
-
   .footer__cover-background {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-    z-index: -1;
     opacity: 1;
     transition: opacity 0.25s ease-in-out;
   }
-
   .footer__cover-content:hover .footer__cover-background {
     opacity: 0.3;
     background-color: #2a2c2f;
   }
   .footer__cover-box {
-    width: 656px;
+    width: 90%;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     text-align: center;
     color: #fff;
   }
-
   .footer__cover-main-text {
-    width: auto;
-    height: auto;
-    font-size: 72px;
-    font-weight: 900;
-    line-height: 1.05;
-    text-align: center;
-    margin: 0 0 32px;
-    color: #fff;
-    z-index: 3;
-  }
-
-  .footer__cover-sub-text {
-    width: auto;
-    height: auto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.22;
-    text-align: center;
-    margin-bottom: 32px;
-  }
-
-  .footer__buy-button {
-    width: auto;
-    height: auto;
-    border: none;
-  }
-
-  .buy-ticket {
-    width: auto;
-    height: auto;
-    padding: 13px 20px;
-    border-radius: 4px;
-    background-color: #0278fe;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  .buy-ticket:hover {
-    background-color: #0063d2;
-  }
-
-  .footer__copyright {
-    width: 170px;
-    height: auto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.14;
-    margin: 0 558px 24px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 320px;
-  }
-
-  .footer__cover-content {
-    max-width: 320px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 0 16px 64px;
-    position: relative;
-    display: inline-block;
-  }
-
-  .footer__cover-background {
-    max-width: 320px;
-    height: auto;
-    display: block;
-    z-index: -1;
-    opacity: 1;
-    transition: opacity 0.25s ease-in-out;
-  }
-
-  .footer__cover-content:hover .footer__cover-background {
-    opacity: 0.3;
-    background-color: #2a2c2f;
-  }
-
-  .footer__cover-box {
-    width: 320px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-    color: #fff;
-  }
-
-  .footer__cover-main-text {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     font-size: 32px;
     font-weight: 900;
     line-height: 1.09;
     text-align: center;
-    margin: 0 0 16px;
+    margin: 0 0 5.6%;
     color: #fff;
-    z-index: 3;
   }
-
   .footer__cover-sub-text {
-    max-width: 100%;
+    width: auto;
     height: auto;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.22;
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  .footer__buy-button {
-    max-width: 100%;
-    height: auto;
-    border: none;
-  }
-
-  .buy-ticket {
-    max-width: 100%;
-    height: auto;
-    padding: 13px 20px;
-    border-radius: 4px;
-    background-color: #0278fe;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-
-  .buy-ticket:hover {
-    background-color: #0063d2;
-  }
-
-  .footer__copyright {
-    max-width: 100%;
-    height: auto;
-    font-size: 12px;
-    font-weight: 400;
     line-height: 1.14;
-    margin: 0 80 24px;
+    text-align: center;
+    margin: 0 0 5.6%;
+  }
+  .footer__copyright {
+    width: 53%;
+    height: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 auto 3.2%;
   }
 }
