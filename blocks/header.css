@@ -5,19 +5,18 @@
   width: 100%;
   margin-bottom: 7.19%;
 }
-.header__logo {
-  width: 21.1%;
-  height: auto;
-  margin: 2.6% auto 7%;
-}
 .header__box {
   width: 76.9%;
   height: auto;
-  margin: 0 auto 5%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 32px;
+}
+.header__logo {
+  width: 27.8%;
+  height: auto;
+  margin: 3.5% auto 9.2%;
 }
 .header__title {
   width: 80.6%;
@@ -25,7 +24,7 @@
   font-weight: 900;
   line-height: 1.04;
   text-align: center;
-  margin: 0;
+  margin: 0 auto 3.3%;
 }
 .header__subtitle {
   width: 73.2%;
@@ -33,10 +32,10 @@
   font-weight: 400;
   line-height: 1.04;
   text-align: center;
-  margin: 0;
+  margin: 0 auto 6.6%;
 }
 .header__image {
-  width: 76.9%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -49,35 +48,34 @@
     width: 100%;
     margin-bottom: 7.19%;
   }
-  .header__logo {
-    width: 35.2%;
-    height: auto;
-    margin: 2.6% auto 9%;
-  }
   .header__box {
-    width: 93.8%;
+    width: 100%;
     height: auto;
-    margin: 0 auto 5%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 99px;
+  }
+  .header__logo {
+    width: 35.2%;
+    height: auto;
+    margin: 34px auto 11.8%;
   }
   .header__title {
-    width: 100%;
+    width: 93.8%;
     font-size: 96px;
     font-weight: 900;
     line-height: 1.04;
     text-align: center;
-    margin: 0;
+    margin: 0 auto 11.8%;
   }
   .header__subtitle {
-    width: 100%;
+    width: 93.8%;
     font-size: 30px;
     font-weight: 400;
     line-height: 1.04;
     text-align: center;
-    margin: 0;
+    margin: 0 auto 9%;
   }
   .header__image {
     width: 100%;
@@ -99,13 +97,11 @@
     margin: 6.3% auto 15.7%;
   }
   .header__box {
-    width: 90%;
     height: auto;
     margin: 0 auto 12.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 60px;
   }
   .header__title {
     width: 100%;
@@ -113,7 +109,7 @@
     font-weight: 900;
     line-height: 1.1;
     text-align: center;
-    margin: 0;
+    margin: 0 auto 19%;
   }
   .header__subtitle {
     width: 100%;
@@ -121,7 +117,7 @@
     font-weight: 400;
     line-height: 1.25;
     text-align: center;
-    margin: 0;
+    margin: 0 auto 12.5%;
   }
   .header__image {
     width: 100%;

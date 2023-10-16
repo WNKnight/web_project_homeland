@@ -1,6 +1,9 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/inter.css);
 @import url(../blocks/header.css);
+@import url(../blocks/page.css);
+@import url(../blocks/content.css);
+@import url(../blocks/button.css);
 @import url(../blocks/intro.css);
 @import url(../blocks/gallery.css);
 @import url(../blocks/places.css);
@@ -8,50 +11,4 @@
 
 body {
   background-color: #2a2c2f;
-}
-.page {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0;
-  color: #fff;
-  font-family: "Inter", "Arial Narrow Bold", sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-.button {
-  max-width: 355px;
-  background-color: #0278fe;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  line-height: 1.21;
-  margin: 0;
-  padding: 13px 20px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-}
-.button:hover {
-  background: #0063d2;
-}
-.content {
-  max-width: 100%;
-  padding: 0;
-  margin-bottom: 92px;
-}
-
-@media screen and (max-width: 320px) {
-  .button {
-    width: 245px;
-    font-size: 14px;
-    padding: 20px 16px;
-    margin: auto;
-  }
-  #footer__button {
-    display: block;
-    font-size: 18px;
-    width: 151px;
-    padding: 12px 13px;
-  }
 }
