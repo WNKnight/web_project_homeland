@@ -1,5 +1,5 @@
 .page {
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   color: #fff;
@@ -8,12 +8,6 @@
   flex-direction: column;
 }
 @media screen and (max-width: 768px) {
-  .page {
-    width: 768px;
-  }
 }
 @media screen and (max-width: 320px) {
-  .page {
-    width: 320px;
-  }
 }

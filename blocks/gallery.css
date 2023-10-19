@@ -1,50 +1,36 @@
 .gallery {
   width: 92.5%;
-  height: auto;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 16px;
-  margin: 0 auto 7.2%;
+  margin: 0 auto 92px;
+  border: 1px solid red;
 }
 .gallery__image {
   width: 100%;
-  height: auto;
   object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .gallery {
     width: 93.8%;
-    height: auto;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 16px;
-    margin: 0 auto 11.5%;
-  }
-  .gallery__image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    margin: 0 auto 88px;
   }
 }
-
 @media screen and (max-width: 320px) {
   .gallery {
     width: 93.8%;
-    height: auto;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1fr);
     grid-gap: 16px;
-    margin: 0 auto 19.4%;
-  }
-  .gallery__image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    margin: 0 auto 62px;
   }
 }
